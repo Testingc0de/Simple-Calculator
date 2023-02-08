@@ -1,0 +1,69 @@
+form{
+   width: 100%;
+   display:grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: repeat(4, 1fr);
+}
+#num1, #num2{
+   grid-column-start: 1;
+   grid-column-end: 3;
+   margin: 2px 0;
+   border-radius: 6px;
+   border-style: groove;
+   appearance: textfield;
+   padding-left: 5px;
+}
+input[name="operation"]{
+   height: 30px;
+   margin: 2px;
+   font-weight: bold;
+   font-family: sans-serif;
+   border: 1px solid blue;
+   background-color: blue;
+   color: white;
+   border-radius: 6px;
+   cursor: pointer;
+}
+.container{
+   margin: auto;
+   padding: 10px;
+   /* width: 50%; */
+   /* background-color: yellow; */
+}
+.calculator{
+   width: 90%;
+   margin: auto;
+   padding: 15px 5px;
+   border: 2px solid #6e6e88;
+   border-radius: 10px;
+   box-shadow: 2px 4px 4px 2px #6e6e88;
+   background-color: #c5b6ee;
+}
+#result{
+   padding: 5px 10px;
+   color: white;
+   font-weight: bold;
+   font-family: sans-serif;
+   width: inherit;
+}
+#result p{
+   display: inline-block;
+   margin: 0;
+}
+#result input{
+   padding: 5px;
+   background-color: white;
+   border-style: none;
+   border-radius: 6px;
+   color:black;
+}
+@media (min-width: 360px){
+   .container{
+      width: 340px;
+   }
+}
+@media (min-width: 768px){
+   .container{
+      width: 730px;
+   }
+}
